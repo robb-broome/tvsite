@@ -1,0 +1,37 @@
+%div.main-paper.shadowed
+  %div.page-header
+    %h1
+      %span Teamvoice
+      %span.lighter Corporation
+
+  %div.body
+
+-# %h1 Listing tomatoes
+
+-# %table
+-#   %tr
+-#     %th Kind
+-#     %th Name
+-#     %th Body
+-#     %th Uuid
+-#     %th Effective date
+-#     %th Active
+-#     %th
+-#     %th
+-#     %th
+
+-#   - @tomatoes.each do |tomato|
+-#     %tr
+-#       %td= tomato.kind
+-#       %td= tomato.name
+-#       %td= tomato.body
+-#       %td= tomato.uuid
+-#       %td= tomato.effective_date
+-#       %td= tomato.active
+-#       %td= link_to 'Show', tomato
+-#       %td= link_to 'Edit', edit_tomato_path(tomato)
+-#       %td= link_to 'Destroy', tomato, :confirm => 'Are you sure?', :method => :delete
+
+-# %br
+
+-# = link_to 'New Tomato', new_tomato_path

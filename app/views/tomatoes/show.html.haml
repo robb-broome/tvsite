@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Kind:
+  = @tomato.kind
+%p
+  %b Name:
+  = @tomato.name
+%p
+  %b Body:
+  = @tomato.body
+%p
+  %b Uuid:
+  = @tomato.uuid
+%p
+  %b Effective date:
+  = @tomato.effective_date
+%p
+  %b Active:
+  = @tomato.active
+
+= link_to 'Edit', edit_tomato_path(@tomato)
+\|
+= link_to 'Back', tomatoes_path

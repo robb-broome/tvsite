@@ -1,0 +1,28 @@
+= form_for @tomato do |f|
+  -if @tomato.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@tomato.errors.count, "error")} prohibited this tomato from being saved:"
+      %ul
+        - @tomato.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :kind
+    = f.text_field :kind
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :body
+    = f.text_area :body
+  .field
+    = f.label :uuid
+    = f.text_field :uuid
+  .field
+    = f.label :effective_date
+    = f.datetime_select :effective_date
+  .field
+    = f.label :active
+    = f.check_box :active
+  .actions
+    = f.submit 'Save'

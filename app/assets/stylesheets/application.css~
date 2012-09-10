@@ -1,0 +1,53 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+
+body {
+  background-image: url('tvbackground.png');
+  background-repeat:repeat;
+  background-color: #FFFFFF;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%
+
+}
+
+.page-header {
+  overflow:hidden;
+}
+
+.shadowed {
+  -webkit-box-shadow: -10px 10px 5px #888; padding: 5px 5px 5px 15px;
+  -moz-box-shadow: -10px 10px 5px #888; padding: 5px 5px 5px 15px;
+  box-shadow: -10px 10px 5px #888; padding: 5px 5px 5px 15px;
+}
+
+h1 {
+  font-family: 'Droid Sans', Helvetica, Arial, Sans-Serif;
+}
+
+.main-paper {
+  margin: 50px 0 300px 50px;
+  overflow:hidden;
+  position:absolute;
+  height:900px;
+  width: 100%;
+  background-color: #FFFFFF;
+  font-size: 80px;
+}
+
+.lighter {
+  color: #C0BFBF;
+  }
